@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text">About Us</h1>
+        <span class="Change" id="white" onclick="BgChange('white')"></span>
+        <span class="Change" id="pink" onclick="BgChange('pink')"></span>
+        <span class="Change" id="violet" onclick="BgChange('violet')"></span>
+        <span class="Change" id="yellow" onclick="BgChange('yellow')"></span>
+        <span class="Change" id="black" onclick="BgChange('black')"></span>
+
+        <img src="image/pexels-sudipta-mondal-1603650.jpg" alt="">
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestiae iusto nesciunt ducimus nihil assumenda eius sint consectetur aperiam molestias, dolor at. Natus quas fugiat saepe officiis quibusdam dicta, numquam quo vero doloremque earum at exercitationem repellendus adipisci nihil molestias maxime voluptate et porro fugit modi nemo ducimus? Ad at aliquid doloribus vel voluptates. Illo quos, architecto, neque aliquam ex beatae dicta aliquid velit doloribus consequuntur ipsam officia obcaecati unde quae mollitia deleniti est. Ipsam nisi alias molestias delectus rem ratione magni error obcaecati velit perspiciatis. Ipsum, doloremque. Libero, deleniti delectus corrupti ipsa minus adipisci nobis quasi. Doloremque rerum blanditiis soluta consequatur praesentium culpa ipsam magni sapiente eius adipisci! Aperiam quidem sapiente cum odit! Harum ipsam officiis vero reprehenderit. Optio dignissimos, sequi temporibus reiciendis vitae ducimus voluptatibus, sit totam fugiat, amet ex expedita illum autem eum recusandae dolor. Voluptates, quos? Suscipit necessitatibus numquam porro, repellat sint fuga. Quasi culpa ut itaque praesentium laborum aliquid, adipisci delectus consectetur, harum eum, a sed? Rerum dolorem ipsa minima minus nobis error officiis animi omnis ullam officia harum sapiente aliquam, quisquam excepturi, laborum amet iste optio. Unde eum harum inventore reprehenderit amet ullam numquam et consectetur non, maxime consequatur assumenda velit molestiae ducimus provident? Deserunt, provident dignissimos ut minima, exercitationem corrupti fugiat sed perspiciatis reprehenderit eligendi veniam quisquam molestiae aperiam nisi enim facere magnam perferendis eos aliquid? Consequatur quibusdam autem veniam voluptatum doloremque eos repudiandae id, cum, sunt possimus odio deleniti facere temporibus obcaecati ea cupiditate deserunt reiciendis voluptates nemo fugiat! Perspiciatis asperiores inventore ab iste quos, aut sed quam, exercitationem veniam hic a! Alias quas eius laudantium nemo reprehenderit nulla earum laborum quod in temporibus recusandae et incidunt, repellendus voluptatum soluta quasi perspiciatis a totam porro placeat molestiae. Excepturi, cum, dolorem officiis iure hic officia porro nemo provident sed qui temporibus praesentium nisi, voluptatem sit at aliquam esse! Ipsum quis placeat sequi officia ut quas ea repellat quasi, velit architecto itaque earum tempore aliquam quo quia error dolore labore necessitatibus rerum voluptatibus quisquam unde odio magnam neque! Saepe labore recusandae fuga ab nisi quas corrupti? Blanditiis unde laudantium, vero nobis ab autem fugit.</p>
+    </div>
+
+    <script>
+        // let change = document.getElementsByClassName("BgChange");
+
+        function BgChange(color){
+            document.body.style.backgroundColor = color;
+
+            let text = document.getElementsByClassName("text");
+
+            if(color == "black"){
+                for(let element of text){
+                    element.style.color = "white";
+                }
+            }else{
+                for (let element of text) {
+                    element.style.color = "black";
+                }
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
